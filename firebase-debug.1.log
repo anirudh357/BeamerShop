@@ -1,0 +1,80 @@
+[debug] [2022-02-28T11:42:18.895Z] ----------------------------------------------------------------------
+[debug] [2022-02-28T11:42:18.896Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aniru\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve -p 5001
+[debug] [2022-02-28T11:42:18.896Z] CLI Version:   10.2.1
+[debug] [2022-02-28T11:42:18.896Z] Platform:      win32
+[debug] [2022-02-28T11:42:18.897Z] Node Version:  v16.14.0
+[debug] [2022-02-28T11:42:18.897Z] Time:          Mon Feb 28 2022 17:12:18 GMT+0530 (India Standard Time)
+[debug] [2022-02-28T11:42:18.897Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-28T11:42:18.945Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-28T11:42:18.945Z] > authorizing via signed-in user (anirudhsharma.3578@gmail.com)
+[debug] [2022-02-28T11:42:18.945Z] [iam] checking project clone-1f37e for permissions ["firebase.projects.get"]
+[debug] [2022-02-28T11:42:18.946Z] > refreshing access token with scopes: []
+[debug] [2022-02-28T11:42:18.946Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-28T11:42:23.705Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 28 Feb 2022 11:42:22 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-28T11:42:23.711Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1f37e:testIamPermissions [none]
+[debug] [2022-02-28T11:42:23.711Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1f37e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-28T11:42:31.248Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1f37e:testIamPermissions 200
+[debug] [2022-02-28T11:42:31.248Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1f37e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-28T11:42:31.249Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e [none]
+[debug] [2022-02-28T11:42:38.129Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e 200
+[debug] [2022-02-28T11:42:38.129Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e {"projectId":"clone-1f37e","projectNumber":"972865750372","displayName":"amazon-clone","name":"projects/clone-1f37e","resources":{"hostingSite":"clone-1f37e","storageBucket":"clone-1f37e.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from 'C:\Users\aniru\OneDrive\Desktop\Projects\amazon-clone\amazon-clone'...
+[info] 
+[debug] [2022-02-28T11:42:38.132Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-1f37e/sites 
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-02-28T11:42:38.137Z] defaultcredentials: writing to file C:\Users\aniru\AppData\Roaming\firebase\anirudhsharma_3578_gmail.com_application_default_credentials.json
+[debug] [2022-02-28T11:42:38.139Z] Setting GAC to C:\Users\aniru\AppData\Roaming\firebase\anirudhsharma_3578_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\aniru\\AppData\\Roaming\\firebase\\anirudhsharma_3578_gmail.com_application_default_credentials.json"}}
+[debug] [2022-02-28T11:42:38.139Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e/adminSdkConfig [none]
+[debug] [2022-02-28T11:42:43.796Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e/adminSdkConfig 200
+[debug] [2022-02-28T11:42:43.796Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e/adminSdkConfig {"projectId":"clone-1f37e","storageBucket":"clone-1f37e.appspot.com","locationId":"us-central"}
+[debug] [2022-02-28T11:42:45.376Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-1f37e/sites 200
+[debug] [2022-02-28T11:42:45.377Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-1f37e/sites {"sites":[{"name":"projects/972865750372/sites/clone-1f37e","defaultUrl":"https://clone-1f37e.web.app","appId":"1:972865750372:web:7b75e6ac6dda8c9b69e671","type":"DEFAULT_SITE"}]}
+[debug] [2022-02-28T11:42:45.377Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e/webApps/1:972865750372:web:7b75e6ac6dda8c9b69e671/config [none]
+[debug] [2022-02-28T11:42:50.934Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e/webApps/1:972865750372:web:7b75e6ac6dda8c9b69e671/config 200
+[debug] [2022-02-28T11:42:50.935Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-1f37e/webApps/1:972865750372:web:7b75e6ac6dda8c9b69e671/config {"projectId":"clone-1f37e","appId":"1:972865750372:web:7b75e6ac6dda8c9b69e671","storageBucket":"clone-1f37e.appspot.com","locationId":"us-central","apiKey":"AIzaSyCIVWOTxGO2_n8mmsLKoP3I6X1PEztgj5Y","authDomain":"clone-1f37e.firebaseapp.com","messagingSenderId":"972865750372","measurementId":"G-C280156N7W"}
+[info] i  functions: Watching "C:\Users\aniru\OneDrive\Desktop\Projects\amazon-clone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\aniru\\OneDrive\\Desktop\\Projects\\amazon-clone\\amazon-clone\\functions\" for Cloud Functions..."}}
+[warn] !  hosting: Port 5001 is not available. Trying another port... {"metadata":{"emulator":{"name":"hosting"},"message":"\u001b[33mhosting: \u001b[39mPort 5001 is not available. Trying another port..."}}
+[debug] [2022-02-28T11:42:50.952Z] Validating nodejs source
+[debug] [2022-02-28T11:43:01.547Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "stripe": "^8.204.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-28T11:43:01.547Z] Building nodejs source
+[debug] [2022-02-28T11:43:01.547Z] Analyzing nodejs backend spec
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5006 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5006\u001b[22m\u001b[24m"}}
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5002/clone-1f37e/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5002/clone-1f37e/us-central1/api)."}}
+[info] i  hosting: 127.0.0.1 - - [28/Feb/2022:11:43:04 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Feb/2022:11:43:04 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Feb/2022:11:43:04 +0000] "GET /static/css/main.4ea5b555.css HTTP/1.1" 200 3888 "http://localhost:5006/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Feb/2022:11:43:04 +0000] \"GET /static/css/main.4ea5b555.css HTTP/1.1\" 200 3888 \"http://localhost:5006/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Feb/2022:11:43:04 +0000] "GET /static/js/main.eaebeb12.js HTTP/1.1" 200 855103 "http://localhost:5006/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Feb/2022:11:43:04 +0000] \"GET /static/js/main.eaebeb12.js HTTP/1.1\" 200 855103 \"http://localhost:5006/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Feb/2022:11:43:05 +0000] "GET /favicon.ico HTTP/1.1" 200 3870 "http://localhost:5006/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Feb/2022:11:43:05 +0000] \"GET /favicon.ico HTTP/1.1\" 200 3870 \"http://localhost:5006/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Feb/2022:11:43:05 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://localhost:5006/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Feb/2022:11:43:05 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://localhost:5006/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Feb/2022:11:43:05 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:5006/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Feb/2022:11:43:05 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:5006/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62\""}}
